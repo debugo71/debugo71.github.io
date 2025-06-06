@@ -9,7 +9,7 @@ type Post = {
   id: string;
   title: string;
   summary?: string;
-  description: string;
+  description?: string;
   tags?: string[];
   mdxSource: MDXRemoteSerializeResult;
 };
