@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import { MDXRemoteSerializeResult } from 'next-mdx-remote';
 import { GetStaticProps } from 'next';
 import { getSortedPostsDataWithContent } from '../lib/posts';
+import AdSense from '../components/AdSense';
 
 const gradients = [
   'from-pink-500 via-red-500 to-orange-400',
@@ -106,6 +107,8 @@ export default function Home({ allPostsData, gradientsForPosts }: HomeProps) {
                 Continue Reading →
               </Link>
             </section>
+
+            <AdSense />
 
             {/* More Posts */}
             <section>
